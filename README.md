@@ -1,7 +1,4 @@
-# Expresso: Your Frappe and ERPNext Data Entry Companion ☕
-
-**Speed up any document creation with smart suggestions**  
-*Reduce repetitive typing across all Frappe documents*
+# Expresso: Frappe and ERPNext Data Entry Made Easy ☕
 
 ---
 
@@ -13,6 +10,8 @@ Frappe document creation often involves:
 - Maintaining consistency across team members
 
 Expresso solves this with **context-aware defaults for any document type**.
+- Speed up any document creation with smart suggestions
+- Reduce repetitive typing across all Frappe documents
 
 ---
 
