@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:model",
+ "creation": "2025-01-22 15:40:20.589907",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_gyfa",
+  "provider",
+  "column_break_jjhd",
+  "model"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_gyfa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "provider",
+   "fieldtype": "Link",
+   "options": "AI Provider",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Provider",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_jjhd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Model",
+   "unique": 1,
+   "reqd": 1
+  }
+ ],
+ "links": [],
+ "modified": "2025-01-22 15:42:41.593158",
+ "modified_by": "Administrator",
+ "module": "Expresso",
+ "name": "AI Model",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

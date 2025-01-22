@@ -1,0 +1,36 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:enabled_doctype",
+ "creation": "2025-01-22 16:41:14.766916",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "enabled_doctype"
+ ],
+ "fields": [
+  {
+   "fieldname": "enabled_doctype",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Enabled Doctype",
+   "options": "DocType",
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-01-22 16:42:58.365983",
+ "modified_by": "Administrator",
+ "module": "Expresso",
+ "name": "Enabled Doctypes",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

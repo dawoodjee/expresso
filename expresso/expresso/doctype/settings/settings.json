@@ -1,0 +1,110 @@
+{
+ "actions": [],
+ "allow_copy": 1,
+ "allow_events_in_timeline": 1,
+ "allow_rename": 1,
+ "creation": "2025-01-22 15:25:43.519922",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "api_settings_section",
+  "provider",
+  "api_key",
+  "rate_limit",
+  "column_break_qgah",
+  "model",
+  "prompt_engineering_section",
+  "system_prompt",
+  "section_break_ndmd",
+  "enabled_doctypes"
+ ],
+ "fields": [
+  {
+   "fieldname": "api_settings_section",
+   "fieldtype": "Section Break",
+   "label": "API Settings"
+  },
+  {
+   "fieldname": "provider",
+   "fieldtype": "Link",
+   "label": "Provider",
+   "options": "AI Provider",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "provider.api_key",
+   "fetch_if_empty": 1,
+   "fieldname": "api_key",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "API Key",
+   "reqd": 1
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Link",
+   "label": "Model",
+   "options": "AI Model",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_qgah",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "prompt_engineering_section",
+   "fieldtype": "Section Break",
+   "label": "Prompt Engineering"
+  },
+  {
+   "fetch_from": "provider.system_prompt",
+   "fetch_if_empty": 1,
+   "fieldname": "system_prompt",
+   "fieldtype": "Long Text",
+   "label": "System Prompt"
+  },
+  {
+   "default": "50",
+   "fieldname": "rate_limit",
+   "fieldtype": "Int",
+   "label": "Rate Limit (per minute)",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_ndmd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "enabled_doctypes",
+   "fieldtype": "Table MultiSelect",
+   "label": "Enabled Doctypes",
+   "options": "Enabled Doctypes"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-01-22 16:44:57.914081",
+ "modified_by": "Administrator",
+ "module": "Expresso",
+ "name": "Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
