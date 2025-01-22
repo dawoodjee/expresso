@@ -2,7 +2,7 @@
 
 ## Why Expresso?
 Frappe document creation often involves:
-- Monotonous data entry for common fields
+- Monotonous manual entry for common fields
 - Scrolling though dropdown links or searching for reference values and clearing wrong values
 - Referencing previous documents to copy values
 - Maintaining consistency across team members
