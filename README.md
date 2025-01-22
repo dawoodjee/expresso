@@ -29,7 +29,7 @@ Expresso solves this with **context-aware defaults for any document type**.
 ## Setup
 1. **Install the app**:
    ```bash
-   bench get-app https://github.com/fabricverse/expresso
+   bench get-app https://github.com/dawoodjee/expresso
    bench install-app expresso
    ```
 2. **Enable Suggestions**:  
