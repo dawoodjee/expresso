@@ -1,7 +1,5 @@
 # Expresso: Frappe and ERPNext Data Entry Made Easy ☕
 
----
-
 ## Why Expresso?
 Frappe document creation often involves:
 - Monotonous data entry for common fields
