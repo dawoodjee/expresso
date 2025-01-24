@@ -2,12 +2,10 @@
   // ../expresso/expresso/public/js/expresso.js
   frappe.provide("expresso");
   $(document).ready(function() {
-    const settings = frappe.model.get_doc("Settings", "Settings");
-    console.log(settings);
-    frappe.db.get_doc("Settings", "Settings").then((settings2) => {
-      console.log("Settings:", settings2);
+    frappe.db.get_doc("Settings", "Settings").then((settings) => {
+      console.log("Settings:", settings);
       let allowed_docs = [];
-      settings2.enabled_doctypes.map((doctype) => {
+      settings.enabled_doctypes.map((doctype) => {
         allowed_docs.push(doctype.name);
       });
       if (allowed_docs) {
@@ -15,6 +13,7 @@
       }
       return;
     }).catch((error) => {
+      return;
     });
     function setup_form(doctypes) {
       let frm_loaded = false;
@@ -37,4 +36,4 @@
     }
   });
 })();
-//# sourceMappingURL=expresso.bundle.3F6AUWJE.js.map
+//# sourceMappingURL=expresso.bundle.EEQXGC2Q.js.map
