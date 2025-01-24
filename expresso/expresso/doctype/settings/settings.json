@@ -9,10 +9,11 @@
  "field_order": [
   "api_settings_section",
   "provider",
-  "api_key",
+  "url",
   "rate_limit",
   "column_break_qgah",
   "model",
+  "api_key",
   "prompt_engineering_section",
   "system_prompt",
   "section_break_ndmd",
@@ -80,13 +81,23 @@
    "fieldtype": "Table MultiSelect",
    "label": "Enabled Doctypes",
    "options": "Enabled Doctypes"
+  },
+  {
+   "fetch_from": "provider.url",
+   "fetch_if_empty": 1,
+   "fieldname": "url",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "URL",
+   "options": "URL",
+   "reqd": 1
   }
  ],
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2025-01-22 16:44:57.914081",
+ "modified": "2025-01-22 18:57:46.290743",
  "modified_by": "Administrator",
  "module": "Expresso",
  "name": "Settings",

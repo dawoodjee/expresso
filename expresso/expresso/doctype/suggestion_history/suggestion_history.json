@@ -1,0 +1,57 @@
+{
+    "name": "Suggestion History",
+    "doctype": "DocType",
+    "module": "Expresso",
+    "is_single": 0,
+    "is_tree": 0,
+    "autoname": "hash",
+    "fields": [
+        {
+            "fieldname": "user",
+            "label": "User",
+            "fieldtype": "Link",
+            "options": "User",
+            "reqd": 1
+        },
+        {
+            "fieldname": "doctype",
+            "label": "DocType",
+            "fieldtype": "Link",
+            "options": "DocType",
+            "reqd": 1
+        },
+        {
+            "fieldname": "fieldname",
+            "label": "Field",
+            "fieldtype": "Data",
+            "reqd": 1
+        },
+        {
+            "fieldname": "suggested_value",
+            "label": "Suggested Value",
+            "fieldtype": "Data",
+            "reqd": 1
+        },
+        {
+            "fieldname": "accepted",
+            "label": "Accepted",
+            "fieldtype": "Check",
+            "default": 0
+        },
+        {
+            "fieldname": "timestamp",
+            "label": "Timestamp",
+            "fieldtype": "Datetime",
+            "default": "now",
+            "read_only": 1
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1
+        }
+    ]
+}

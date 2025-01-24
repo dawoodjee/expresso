@@ -1,0 +1,31 @@
+{
+    "name": "Leaderboard",
+    "doctype": "DocType",
+    "module": "Expresso",
+    "is_single": 1,
+    "is_tree": 0,
+    "autoname": "Leaderboard",
+    "fields": [
+        {
+            "fieldname": "time_period",
+            "label": "Time Period",
+            "fieldtype": "Select",
+            "options": "Last Week\nLast Month\nLast Quarter\nLast Year",
+            "default": "Last Month"
+        },
+        {
+            "fieldname": "leaderboard_data",
+            "label": "Leaderboard Data",
+            "fieldtype": "JSON",
+            "hidden": 1
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1
+        }
+    ]
+}

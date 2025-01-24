@@ -1,0 +1,45 @@
+{
+    "name": "Team Comparison",
+    "doctype": "DocType",
+    "module": "Expresso",
+    "is_single": 0,
+    "is_tree": 0,
+    "autoname": "hash",
+    "fields": [
+        {
+            "fieldname": "team_1",
+            "label": "Team 1",
+            "fieldtype": "Link",
+            "options": "Team",
+            "reqd": 1
+        },
+        {
+            "fieldname": "team_2",
+            "label": "Team 2",
+            "fieldtype": "Link",
+            "options": "Team",
+            "reqd": 1
+        },
+        {
+            "fieldname": "comparison_data",
+            "label": "Comparison Data",
+            "fieldtype": "JSON",
+            "hidden": 1
+        },
+        {
+            "fieldname": "time_period",
+            "label": "Time Period",
+            "fieldtype": "Select",
+            "options": "Last Week\nLast Month\nLast Quarter\nLast Year",
+            "default": "Last Month"
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1
+        }
+    ]
+}

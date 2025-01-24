@@ -1,0 +1,56 @@
+{
+    "name": "Notification History",
+    "doctype": "DocType",
+    "module": "Expresso",
+    "is_single": 0,
+    "is_tree": 0,
+    "autoname": "hash",
+    "fields": [
+        {
+            "fieldname": "user",
+            "label": "User",
+            "fieldtype": "Link",
+            "options": "User",
+            "reqd": 1
+        },
+        {
+            "fieldname": "notification_type",
+            "label": "Notification Type",
+            "fieldtype": "Select",
+            "options": "In-App\nEmail\nPush",
+            "reqd": 1
+        },
+        {
+            "fieldname": "subject",
+            "label": "Subject",
+            "fieldtype": "Data",
+            "reqd": 1
+        },
+        {
+            "fieldname": "message",
+            "label": "Message",
+            "fieldtype": "Text",
+            "reqd": 1
+        },
+        {
+            "fieldname": "timestamp",
+            "label": "Timestamp",
+            "fieldtype": "Datetime",
+            "reqd": 1
+        },
+        {
+            "fieldname": "read",
+            "label": "Read",
+            "fieldtype": "Check",
+            "default": 0
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1
+        }
+    ]
+}

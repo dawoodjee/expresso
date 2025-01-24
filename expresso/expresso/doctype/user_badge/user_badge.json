@@ -1,0 +1,38 @@
+{
+    "name": "User Badge",
+    "doctype": "DocType",
+    "is_single": 0,
+    "module": "Expresso",
+    "is_tree": 0,
+    "autoname": "hash",
+    "fields": [
+        {
+            "fieldname": "user",
+            "label": "User",
+            "fieldtype": "Link",
+            "options": "User",
+            "reqd": 1
+        },
+        {
+            "fieldname": "badge",
+            "label": "Badge",
+            "fieldtype": "Link",
+            "options": "Achievement Badge",
+            "reqd": 1
+        },
+        {
+            "fieldname": "date_awarded",
+            "label": "Date Awarded",
+            "fieldtype": "Date",
+            "reqd": 1
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1
+        }
+    ]
+}

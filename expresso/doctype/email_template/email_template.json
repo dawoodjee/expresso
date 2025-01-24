@@ -1,0 +1,6 @@
+{
+    "name": "Suggestion Analytics Report",
+    "doctype": "Email Template",
+    "subject": "Daily Suggestion Analytics Report - {date}",
+    "response": "<p>Here is your daily suggestion analytics report:</p><p>Total Suggestions: {total}</p><p>Accepted Suggestions: {accepted}</p><p>Rejected Suggestions: {rejected}</p><p>Accuracy Rate: {accuracy}%</p><p>See attached PDF for detailed analytics.</p>"
+}

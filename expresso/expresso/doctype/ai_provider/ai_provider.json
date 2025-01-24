@@ -9,6 +9,8 @@
  "field_order": [
   "section_break_gyfa",
   "provider",
+  "url",
+  "column_break_dzpu",
   "api_key",
   "prompt_engineering_section",
   "system_prompt"
@@ -40,10 +42,21 @@
    "fieldname": "system_prompt",
    "fieldtype": "Long Text",
    "label": "System Prompt"
+  },
+  {
+   "fieldname": "url",
+   "fieldtype": "Data",
+   "label": "URL",
+   "options": "URL",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_dzpu",
+   "fieldtype": "Column Break"
   }
  ],
  "links": [],
- "modified": "2025-01-22 15:35:44.828804",
+ "modified": "2025-01-22 18:49:17.093440",
  "modified_by": "Administrator",
  "module": "Expresso",
  "name": "AI Provider",

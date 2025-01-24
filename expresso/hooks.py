@@ -5,6 +5,41 @@ app_description = "A Frappe/ERPNext Data Entry Companion ☕"
 app_email = "adam.dawoodjee@gmail.com"
 app_license = "mit"
 
+import frappe
+from expresso.suggestions import SuggestionService
+
+# Add to existing hooks.py content
+# app_include_js = "/assets/expresso/js/expresso.bundle.js"
+app_include_js = 'expresso.bundle.js'
+
+@frappe.whitelist()
+def get_suggestions(doctype, field, doc_data):
+    """API endpoint for getting suggestions"""
+    try:
+        service = SuggestionService(doctype)
+        doc = frappe.get_doc(json.loads(doc_data))
+        suggestions = service.get_predictions(doc, field)
+        return {
+            'success': True,
+            'suggestions': suggestions
+        }
+    except Exception as e:
+        frappe.log_error(f"Suggestion API Error: {str(e)}")
+        return {
+            'success': False,
+            'error': str(e)
+        }
+
+def after_install():
+    """Create default AI Provider if not exists"""
+    if not frappe.db.exists('AI Provider', 'Open AI'):
+        frappe.get_doc({
+            'doctype': 'AI Provider',
+            'provider': 'Open AI',
+            'url': 'https://api.openai.com/v1/chat/completions'
+        }).insert()
+
+
 # Apps
 # ------------------
 

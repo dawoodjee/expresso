@@ -1,0 +1,60 @@
+{
+    "name": "Suggestion Analytics",
+    "doctype": "DocType",
+    "module": "Expresso",
+    "is_single": 1,
+    "is_tree": 0,
+    "autoname": "Suggestion Analytics",
+    "fields": [
+        {
+            "fieldname": "total_suggestions",
+            "label": "Total Suggestions",
+            "fieldtype": "Int",
+            "read_only": 1
+        },
+        {
+            "fieldname": "accepted_suggestions",
+            "label": "Accepted Suggestions",
+            "fieldtype": "Int",
+            "read_only": 1
+        },
+        {
+            "fieldname": "rejected_suggestions",
+            "label": "Rejected Suggestions",
+            "fieldtype": "Int",
+            "read_only": 1
+        },
+        {
+            "fieldname": "accuracy_rate",
+            "label": "Accuracy Rate",
+            "fieldtype": "Percent",
+            "read_only": 1
+        },
+        {
+            "fieldname": "most_accurate_field",
+            "label": "Most Accurate Field",
+            "fieldtype": "Data",
+            "read_only": 1
+        },
+        {
+            "fieldname": "least_accurate_field",
+            "label": "Least Accurate Field",
+            "fieldtype": "Data",
+            "read_only": 1
+        },
+        {
+            "fieldname": "analytics_data",
+            "label": "Analytics Data",
+            "fieldtype": "JSON",
+            "hidden": 1
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1
+        }
+    ]
+}
